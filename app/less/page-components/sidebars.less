@@ -1,0 +1,143 @@
+/* **************** LEFT-SIDEBAR ****************** */
+	.advertisement{
+		.advertisement__tagline{
+			font-size: 14px;
+			padding-bottom: 17px;
+			display: inline-block;
+		}
+		.advertisement__img{
+			padding-bottom: 3px;
+		}
+		.ads-by{
+			color: @signature_color;
+			font-size: 11px;
+		}
+		.border-bottom;
+	}
+	.left-sidebar{
+		width: 212px;
+		margin-right: 15px;
+		flex-shrink: 0;
+	}
+	.nav__link{
+		position: relative;
+		padding: 0 0 0 49px;
+		height: 51px;
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid @border_color;
+		transition: background .2s;
+		&:hover{
+			background: #f4f7fb;
+		}
+		.link__icon{
+			position: absolute;
+			left: 0;
+		}
+		.nav__span{
+			color: @text_color;
+		}
+	}
+	.sidebar__item{
+		.border-bottom;
+		padding: 19px 0 21px 0;
+		margin-bottom: 13px;
+		.sidebar__item__header{
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 16px;
+		}
+		.sidebar__item__tagline{
+			font-size: 14px;
+			color: @text_color;
+		}
+		.item__see-all{
+			font-size: 14px;
+			.hover();
+		}
+	}
+	.list__item{
+		display: flex;
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.img_wrap{
+			width: 80px;
+			height: 80px;
+			overflow: hidden;
+			border-radius: 6px;
+			margin-right: 10px;
+		}
+		.item__description{
+			width: 58%;
+		}
+		.industry,
+		.location{
+			font-size: 14px;
+			color: @text_color;
+		}
+		.company__link{
+			font-size: 12px;
+			display: inline-block;
+			.hover();
+		}
+		.company-name{
+			margin-bottom: 3px;
+			display: inline-block;
+		}
+		.industry{
+			margin-bottom: 4px;
+			display: inline-block;
+		}
+		.location{
+			margin-bottom: 2px;
+			display: inline-block;
+		}
+	}
+	.left-sidebar__footer{
+		.copy{
+			display: inline-block;
+			margin-bottom: 12px;
+		}
+		.terms{
+			margin-right: 16px;
+		}
+		.terms,
+		.privacy,
+		.copy{
+			color: @signature_color;
+			font-size: 12px;
+		}
+	}
+
+/* **************** RIGHT-SIDEBAR ****************** */
+	.right-sidebar{
+		width: 213px;
+		margin-left: 15px;
+		flex-shrink: 0;
+		.list__item{
+			display: block;
+		}
+		.industry{
+			line-height: 1.2;
+		}
+		.sidebar__item{
+			margin-bottom: 0;
+		}
+	}
+	.item__bottom-line{
+		display: flex;
+	}
+	.user-name{
+		margin-bottom: 6px;
+		display: inline-block;
+	}
+	.product__text{
+		font-size: 14px;
+		color: @text_color;
+		line-height: 1.25;
+	}
+	.list__item__product{
+		margin-bottom: 13px;
+	}

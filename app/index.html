@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<title>test</title>	
+
+	<!-- build:css css/vendor.min.css -->
+	<!-- bower:css -->
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css css/custom.css -->
+	<link rel="stylesheet" href="css/main.css">
+	<!-- endbuild -->
+
+</head>
+
+<body>
+
+	<section class="menu">
+		<div class="menu_mask"></div>
+		<div class="menu_wrap">
+			<div class="menu_top-line">
+				<div class="btn_close" id="menu_close"></div>
+				<a href="#" class="profile-member">
+					<div class="profile-member__photo">
+						<img src="img/header/profile-photo.jpg" alt="photo" class="photo">
+					</div>
+					<span class="profile-member__name">Maximillian Beekeeper</span>
+				</a>
+			</div>
+			<ul class="left-sidebar__nav">
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.88 23" width="24" height="23"><path d="M19.46,12.7c-.39,0-.58.31-.58.71V22h-4V17.63a.69.69,0,0,0-.67-.69H9.57a.71.71,0,0,0-.71.69V22h-4V13.33c0-.37,0-.62-.39-.62a.57.57,0,0,0-.6.62v9a.68.68,0,0,0,.67.68h4.7a.68.68,0,0,0,.67-.68v-4.2h4v4.2a.69.69,0,0,0,.69.68h4.63a.68.68,0,0,0,.67-.68V13.41C19.9,13,19.83,12.7,19.46,12.7Zm4.31-.85L17.91,6V1.8c0-.4-.11-.57-.5-.57s-.53.2-.53.59v3L12.4.22A.66.66,0,0,0,11.93,0a.68.68,0,0,0-.49.22L.09,11.77c-.27.28.16.55.45.8s.81-.28,1.09-.56l10.27-11L22.58,12.37a.86.86,0,0,0,.54.28c.19,0,.2.07.34,0S24,12.13,23.77,11.85Z" style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Feed</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.01 23.64" width="24" height="23"><path d="M24,2.37C24-.24,24.26,0,21.61,0H2.41C-.24,0,0-.24,0,2.37v18.9c0,2.61-.25,2.36,2.4,2.36h19.2c2.65,0,2.4.25,2.4-2.36ZM23,22.8H1V.81H23Zm-11.9-4h1.76v-2H11.1ZM10,8.78a2.37,2.37,0,0,1,.44-.88,2,2,0,0,1,.69-.61,1.78,1.78,0,0,1,.92-.2,2.52,2.52,0,0,1,1.66.52,2.11,2.11,0,0,1,.48,1.46A2.27,2.27,0,0,1,13.41,11c-.22.26-1.15,1.15-1.36,1.4a3.68,3.68,0,0,0-.55.88,3.32,3.32,0,0,0-.29,1.23v.88H13v-.66a2.76,2.76,0,0,1,.13-.87,2.7,2.7,0,0,1,.35-.65c.14-.2.14-.38.32-.56s.44-.35.63-.52.44-.37.62-.56a3.42,3.42,0,0,0,.37-.63c.14-.23.08-.48.17-.76a3.11,3.11,0,0,0,.23-.94,3.67,3.67,0,0,0-.23-1.44,3.16,3.16,0,0,0-.77-1.1,4,4,0,0,0-1.22-.79,4.53,4.53,0,0,0-1.48-.19A4,4,0,0,0,10.46,6a3.13,3.13,0,0,0-1.13.88,4.35,4.35,0,0,0-.76,1.41,4,4,0,0,0-.21,1.53H9.87A3.56,3.56,0,0,1,10,8.78Z" style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Ask a Colleague</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 24" width="21" height="24"><path d="M4,7H7V4H4Zm0,6.5H7v-3H4ZM4,20H7V17H4ZM19.5,6H11V1.5A1.5,1.5,0,0,0,9.5,0h-8A1.5,1.5,0,0,0,0,1.5v21A1.5,1.5,0,0,0,1.5,24h18A1.5,1.5,0,0,0,21,22.5V7.5A1.5,1.5,0,0,0,19.5,6ZM10,7.5v15a.5.5,0,0,1-.5.5h-8a.5.5,0,0,1-.5-.5V1.5A.5.5,0,0,1,1.5,1h8a.5.5,0,0,1,.5.5Zm10,15a.5.5,0,0,1-.5.5h-8a.5.5,0,0,1-.5-.5V7.5a.5.5,0,0,1,.5-.5h8a.5.5,0,0,1,.5.5Zm-6-9h3v-3H14ZM14,20h3V17H14Z" style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Companies</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 24" width="19" height="24"><path d="M17.5,0H1.5A1.5,1.5,0,0,0,0,1.5v21A1.5,1.5,0,0,0,1.5,24h16A1.5,1.5,0,0,0,19,22.5V1.5A1.5,1.5,0,0,0,17.5,0ZM18,22.5a.5.5,0,0,1-.5.5H1.5a.5.5,0,0,1-.5-.5V1.5A.5.5,0,0,1,1.5,1h16a.5.5,0,0,1,.5.5ZM3,9H16V7H3ZM7,5h9V3H7ZM3,21H16V19H3Zm0-4H16V15H3Zm0-4H16V11H3Z"style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Service Directory</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+<!-- HEADER -->
+	<header class="page-header">
+		<div class="container page-header__container">
+			<a href="#" class="brand-logo">
+				<img src="img/header/logo.png" alt="Denteez">
+			</a>
+			<form action="" method="post" id="search">
+				<input type="search" name="" placeholder="Company Name" class="search">
+				<svg class="search__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.97 15.99" width="16" height="16"><path d="M15.8,15l-3.91-3.88a6.73,6.73,0,1,0-.82.82L15,15.82A.58.58,0,0,0,15.8,15Zm-9-2.67a5.56,5.56,0,1,1,5.55-5.56A5.56,5.56,0,0,1,6.76,12.34Z" style="fill:#8ebc4d;"/></svg>
+			</form>
+			<div class="navigation">
+				<a href="#" class="messaging">
+					<svg class="page-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 22" width="26" height="22"><path d="M25,19H20c0,1,0,2.47,0,2.61s-.68.51-1,.29A11.15,11.15,0,0,1,16.94,19H12c-.83,0-1-.32-1-1.15V17l1,0,0,1h5.92L19,20V18h6V9H19V8H24.5c.83,0,1.5.33,1.5,1.16v8.65C26,18.69,25.82,19,25,19ZM11,17H9.4c-.69.61-2,1.73-2.67,2.31A.7.7,0,0,1,5.81,19c0-.14,0-1.06,0-2H1.12C.3,17,0,16.68,0,15.85V1.1C0,.27.14,0,1,0h17c.83,0,1,.24,1,1.07V15.23A1.82,1.82,0,0,1,17.39,17H11C10.93,17,10.91,17,11,17ZM18,16,18,1H1V16H6.95v2l2-2Zm-13.3-4.4v0A.54.54,0,0,1,5.17,11h9.07a.56.56,0,0,1,.51.56v0a.46.46,0,0,1-.51.44H5.17A.46.46,0,0,1,4.65,11.58ZM12,6H5.17a.46.46,0,0,1-.51-.44v0A.54.54,0,0,1,5.17,5H12a.56.56,0,0,1,.51.56v0A.46.46,0,0,1,12,6ZM5.17,8H9.74a.53.53,0,0,1,.51.53v0A.46.46,0,0,1,9.74,9H5.17a.46.46,0,0,1-.51-.44v0A.51.51,0,0,1,5.17,8Z"/></svg>
+				</a>
+				<a href="#" class="notifications">
+					<svg class="page-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M23.92,20.67a.7.7,0,0,1-.64.37H.73a.7.7,0,0,1-.64-.37A1.29,1.29,0,0,1,0,20.18a.71.71,0,0,1,.14-.4,16.35,16.35,0,0,0,2.11-4.37A31.86,31.86,0,0,0,4,9c.22-1.69.47-3.39,1.24-4.3A7.42,7.42,0,0,1,6.57,3.45,8.25,8.25,0,0,1,9.33,2.12,2.59,2.59,0,0,1,10.28.61,2.67,2.67,0,0,1,12,0a2.7,2.7,0,0,1,1.73.61,2.57,2.57,0,0,1,1,1.51,8.24,8.24,0,0,1,2.75,1.33,7.39,7.39,0,0,1,1.34,1.24,8,8,0,0,1,1.7,4,42.56,42.56,0,0,0,1.28,6.67,17.09,17.09,0,0,0,2.12,4.53.67.67,0,0,1,.13.39A.85.85,0,0,1,23.92,20.67Zm-3.76-5.59A52.52,52.52,0,0,1,19,8.92a6.67,6.67,0,0,0-1.44-3.41,6,6,0,0,0-1.17-1,7.23,7.23,0,0,0-2.57-1.1.72.72,0,0,1-.56-.69v0A1.26,1.26,0,0,0,12,1.43a1.27,1.27,0,0,0-1.28,1.24v0a.69.69,0,0,1-.54.69,7.32,7.32,0,0,0-2.58,1.1A6,6,0,0,0,5,8.92,57.23,57.23,0,0,1,3.84,15.1,21.27,21.27,0,0,1,2,20H22A21.85,21.85,0,0,1,20.16,15.09ZM13.5,23.37A2,2,0,0,1,12,24a2.07,2.07,0,0,1-1.52-.63,2,2,0,0,1-.63-1.48h4.27A2,2,0,0,1,13.5,23.37Z"/></svg>
+				</a>
+			</div>
+			<a href="#" class="profile-member">
+				<div class="profile-member__photo">
+					<img src="img/header/profile-photo.jpg" alt="photo" class="photo">
+				</div>
+				<span class="profile-member__name">Maximillian Beekeeper</span>
+			</a>
+			<button class="mobile_btn" id="mobile-menu_btn">
+				<span></span>
+			</button>
+		</div>
+	</header>
+<!-- END HEADER -->
+
+<!-- MAIN-CONTENT -->
+	<section class="main-page container">
+
+<!-- LEFT-SIDEBAR -->
+		<section class="left-sidebar">
+			<ul class="left-sidebar__nav">
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.88 23" width="24" height="23"><path d="M19.46,12.7c-.39,0-.58.31-.58.71V22h-4V17.63a.69.69,0,0,0-.67-.69H9.57a.71.71,0,0,0-.71.69V22h-4V13.33c0-.37,0-.62-.39-.62a.57.57,0,0,0-.6.62v9a.68.68,0,0,0,.67.68h4.7a.68.68,0,0,0,.67-.68v-4.2h4v4.2a.69.69,0,0,0,.69.68h4.63a.68.68,0,0,0,.67-.68V13.41C19.9,13,19.83,12.7,19.46,12.7Zm4.31-.85L17.91,6V1.8c0-.4-.11-.57-.5-.57s-.53.2-.53.59v3L12.4.22A.66.66,0,0,0,11.93,0a.68.68,0,0,0-.49.22L.09,11.77c-.27.28.16.55.45.8s.81-.28,1.09-.56l10.27-11L22.58,12.37a.86.86,0,0,0,.54.28c.19,0,.2.07.34,0S24,12.13,23.77,11.85Z" style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Feed</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.01 23.64" width="24" height="23"><path d="M24,2.37C24-.24,24.26,0,21.61,0H2.41C-.24,0,0-.24,0,2.37v18.9c0,2.61-.25,2.36,2.4,2.36h19.2c2.65,0,2.4.25,2.4-2.36ZM23,22.8H1V.81H23Zm-11.9-4h1.76v-2H11.1ZM10,8.78a2.37,2.37,0,0,1,.44-.88,2,2,0,0,1,.69-.61,1.78,1.78,0,0,1,.92-.2,2.52,2.52,0,0,1,1.66.52,2.11,2.11,0,0,1,.48,1.46A2.27,2.27,0,0,1,13.41,11c-.22.26-1.15,1.15-1.36,1.4a3.68,3.68,0,0,0-.55.88,3.32,3.32,0,0,0-.29,1.23v.88H13v-.66a2.76,2.76,0,0,1,.13-.87,2.7,2.7,0,0,1,.35-.65c.14-.2.14-.38.32-.56s.44-.35.63-.52.44-.37.62-.56a3.42,3.42,0,0,0,.37-.63c.14-.23.08-.48.17-.76a3.11,3.11,0,0,0,.23-.94,3.67,3.67,0,0,0-.23-1.44,3.16,3.16,0,0,0-.77-1.1,4,4,0,0,0-1.22-.79,4.53,4.53,0,0,0-1.48-.19A4,4,0,0,0,10.46,6a3.13,3.13,0,0,0-1.13.88,4.35,4.35,0,0,0-.76,1.41,4,4,0,0,0-.21,1.53H9.87A3.56,3.56,0,0,1,10,8.78Z" style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Ask a Colleague</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 24" width="21" height="24"><path d="M4,7H7V4H4Zm0,6.5H7v-3H4ZM4,20H7V17H4ZM19.5,6H11V1.5A1.5,1.5,0,0,0,9.5,0h-8A1.5,1.5,0,0,0,0,1.5v21A1.5,1.5,0,0,0,1.5,24h18A1.5,1.5,0,0,0,21,22.5V7.5A1.5,1.5,0,0,0,19.5,6ZM10,7.5v15a.5.5,0,0,1-.5.5h-8a.5.5,0,0,1-.5-.5V1.5A.5.5,0,0,1,1.5,1h8a.5.5,0,0,1,.5.5Zm10,15a.5.5,0,0,1-.5.5h-8a.5.5,0,0,1-.5-.5V7.5a.5.5,0,0,1,.5-.5h8a.5.5,0,0,1,.5.5Zm-6-9h3v-3H14ZM14,20h3V17H14Z" style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Companies</span>
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						<svg class="link__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 24" width="19" height="24"><path d="M17.5,0H1.5A1.5,1.5,0,0,0,0,1.5v21A1.5,1.5,0,0,0,1.5,24h16A1.5,1.5,0,0,0,19,22.5V1.5A1.5,1.5,0,0,0,17.5,0ZM18,22.5a.5.5,0,0,1-.5.5H1.5a.5.5,0,0,1-.5-.5V1.5A.5.5,0,0,1,1.5,1h16a.5.5,0,0,1,.5.5ZM3,9H16V7H3ZM7,5h9V3H7ZM3,21H16V19H3Zm0-4H16V15H3Zm0-4H16V11H3Z"style="fill:#c7cdd9;"/></svg>
+						<span class="nav__span">Service Directory</span>
+					</a>
+				</li>
+			</ul>
+			<div class="advertisement">
+				<a href="#" class="advertisement__link">
+					<span class="advertisement__tagline">Advertisement</span>
+					<img src="img/left-sidebar/advertisement.jpg" alt="advertisement" class="advertisement__img">
+					<span class="ads-by">Ads By Danteez.com</span>
+				</a>
+			</div>
+			<div class="sidebar__item">
+				<div class="sidebar__item__header">
+					<span class="sidebar__item__tagline">Featured Companies</span>
+					<a href="#" class="item__see-all">See All</a>
+				</div>
+				<ul class="sidebar__item__list">
+					<li class="list__item">
+						<a href="#" class="img_wrap">
+							<img src="img/left-sidebar/1.jpg" alt="photo" class="item__img">
+						</a>
+						<div class="item__description">
+							<span class="company-name">Company Name</span>
+							<span class="industry">Manufacturer</span>
+							<span class="location">Belgrade, Serbia</span>
+							<a href="#" class="company__link">Follow Now</a>
+						</div>
+					</li>
+					<li class="list__item">
+						<a href="#" class="img_wrap">
+							<img src="img/left-sidebar/2.jpg" alt="photo" class="item__img">
+						</a>
+						<div class="item__description">
+							<span class="company-name">Company Name</span>
+							<span class="industry">Service Provider</span>
+							<span class="location">New York, USA</span>
+							<a href="#" class="company__link">Follow Now</a>
+						</a>
+					</li>
+					<li class="list__item">
+						<a href="#" class="img_wrap">
+							<img src="img/left-sidebar/3.jpg" alt="photo" class="item__img">
+						</a>
+						<div class="item__description">
+							<span class="company-name">Company Name</span>
+							<span class="industry">Supplier</span>
+							<span class="location">London, England</span>
+							<a href="#" class="company__link">Follow Now</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<footer class="left-sidebar__footer">
+				<span class="copy">Denteez Copyright 2015</span>
+				<div class="footer__links">
+					<a href="#" class="terms">Terms of use</a>
+					<a href="#" class="privacy">Privacy Policy</a>
+				</div>
+			</footer>
+		</section>
+<!-- END LEFT-SIDEBAR -->
+
+<!-- SERVICE-DIRECTORY -->
+		<section class="service-directory">
+			<header class="service-directory__header">
+				<h2 class="h2">Service Directory</h2>
+				<button class="btn-add">Add New Service</button>
+			</header>
+			<div class="service-directory__content">
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-242"></i>
+					</div>
+					<span class="item__title">Accountancy</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-243"></i>
+					</div>
+					<span class="item__title">Associations</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-241"></i>
+					</div>
+					<span class="item__title">Buy/Sell Dental Practice</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-244"></i>
+					</div>
+					<span class="item__title">Clinical Waste Collection</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-245"></i>
+					</div>
+					<span class="item__title">Computer Service</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-246"></i>
+					</div>
+					<span class="item__title">CPR/Basic Life Support Training</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-247"></i>
+					</div>
+					<span class="item__title">Dental Recruitment</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-248"></i>
+					</div>
+					<span class="item__title">Dental Software</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-249"></i>
+					</div>
+					<span class="item__title">Electrical Safety And Testing</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2410"></i>
+					</div>
+					<span class="item__title">Marketing</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2411"></i>
+					</div>
+					<span class="item__title">Others</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2412"></i>
+					</div>
+					<span class="item__title">Repairs</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2413"></i>
+					</div>
+					<span class="item__title">Solicitors</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2414"></i>
+					</div>
+					<span class="item__title">Surgery Design</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2415"></i>
+					</div>
+					<span class="item__title">Training & Courses</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2416"></i>
+					</div>
+					<span class="item__title">Web Designers</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2417"></i>
+					</div>
+					<span class="item__title">Cleaning Agencies</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2418"></i>
+					</div>
+					<span class="item__title">Dental  Chair Recovery</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2419"></i>
+					</div>
+					<span class="item__title">Equipment Engineering</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2420"></i>
+					</div>
+					<span class="item__title">Selling Gold</span>
+				</div>
+				<div class="service-directory__item">
+					<a href="#" class="service-directory__link"></a>
+					<div class="item__icon">
+						<i class="icon rectangle-2421"></i>
+					</div>
+					<span class="item__title">Uniform & Workwear</span>
+				</div>
+				
+			</div>
+		</section>
+<!-- END SERVICE-DIRECTORY -->
+
+
+
+
+<!-- RIGHT-SIDEBAR -->
+		<section class="right-sidebar">
+			<div class="sidebar__item">
+				<div class="sidebar__item__header">
+					<span class="sidebar__item__tagline">People you may know</span>
+					<a href="#" class="item__see-all">See All</a>
+				</div>
+				<ul class="sidebar__item__list">
+					<li class="list__item">
+						<a href="#" class="user-name">Dennis Adams</a>
+						<div class="item__bottom-line">
+							<a href="#" class="img_wrap">
+								<img src="img/right-sidebar/Layer-36.jpg" alt="photo" class="item__img">
+							</a>
+							<div class="item__description">
+								<span class="industry">Dentist(Practice Owner)</span>
+								<span class="location">London, England</span>
+								<a href="#" class="company__link">Add Friend</a>
+							</div>
+						</div>
+					</li>
+					<li class="list__item">
+						<a href="#" class="user-name">Mary Carpenter</a>
+						<div class="item__bottom-line">
+							<a href="#" class="img_wrap">
+								<img src="img/right-sidebar/Layer-37.jpg" alt="photo" class="item__img">
+							</a>
+							<div class="item__description">
+								<span class="industry">Dentist(Practice Owner)</span>
+								<span class="location">Belgrade, Serbia</span>
+								<a href="#" class="company__link">Add Friend</a>
+							</div>
+						</div>
+					</li>
+					<li class="list__item">
+						<a href="#" class="user-name">Danielle Salazar</a>
+						<div class="item__bottom-line">
+							<a href="#" class="img_wrap">
+								<img src="img/right-sidebar/Layer-38.jpg" alt="photo" class="item__img">
+							</a>
+							<div class="item__description">
+								<span class="industry">Dentist(Practice Owner)</span>
+								<span class="location">Paris, France</span>
+								<a href="#" class="company__link">Add Friend</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="sidebar__item">
+				<div class="sidebar__item__header">
+					<span class="sidebar__item__tagline">Featured Products</span>
+					<a href="#" class="item__see-all">See All</a>
+				</div>
+				<ul class="sidebar__item__list">
+					<li class="list__item list__item__product">
+						<a href="#" class="user-name">Product Name</a>
+						<div class="item__bottom-line">
+							<a href="#" class="img_wrap">
+								<img src="img/right-sidebar/Layer-36.jpg" alt="photo" class="item__img">
+							</a>
+							<div class="item__description">
+								<p class="product__text">Product Short Description.<br>The quick brown fox jumps over the lazy dog.</p>
+							</div>
+						</div>
+					</li>
+					<li class="list__item list__item__product">
+						<a href="#" class="user-name">Product Name</a>
+						<div class="item__bottom-line">
+							<a href="#" class="img_wrap">
+								<img src="img/right-sidebar/Layer-36.jpg" alt="photo" class="item__img">
+							</a>
+							<div class="item__description">
+								<p class="product__text">Product Short Description.<br>The quick brown fox jumps over the lazy dog.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="advertisement">
+				<a href="" class="advertisement__link">
+					<span class="advertisement__tagline">Advertisement</span>
+					<img src="img/right-sidebar/advertisement-2.jpg" alt="advertisement" class="advertisement__img">
+					<span class="ads-by">Ads By Danteez.com</span>
+				</a>
+			</div>
+		</section>
+<!-- END RIGHT-SIDEBAR -->
+
+	</section>
+<!-- END MAIN-CONTENT -->
+
+
+
+
+<!-- SCRIPTS -->
+
+	<!-- build:js js/vendor.js -->
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js js/custom.js -->
+	<script src="js/custom.js"></script>
+	<!-- endbuild -->
+<!-- END SCRIPTS -->
+
+</body>
+
+</html>

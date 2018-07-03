@@ -1,0 +1,68 @@
+/* **************** HEADER ****************** */
+	.page-header{
+		background: @green;
+		color: @white;
+		padding: 11px 0 16px 0;
+		border-bottom: 1px solid #71973c;
+		.page-header__container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.brand-logo{
+			display: inline-block;
+		}
+		#search{
+			position: relative;
+			padding-top: 5px;
+			.search{
+				width: 435px;
+				height: 34px;
+				background: #73993d;
+				color: @white;
+				box-sizing: border-box;
+				padding: 0 0 0 39px;
+				font-size: 15px;
+			}
+			.search__icon{
+				position: absolute;
+				top: 58%;
+				left: 9px;
+				transform: translateY(-50%);
+			}
+		}
+		.navigation{
+			padding-top: 8px;
+			.messaging{
+				margin: 0 16px 0 0;
+			}
+			.page-header__icon{
+				transition: fill .2s;
+				fill: @white;
+				&:hover{
+					fill: darken(@white, 10%);
+				}
+			}
+		}
+	}
+	.profile-member{
+		display: flex;
+		margin: 3px 11px 0 0;
+		align-items: center;
+		&:hover{
+			.profile-member__name{
+				color: darken(@white, 10%);
+			}
+		}
+		.profile-member__photo{
+			width: 32px;
+			height: 32px;
+			overflow: hidden;
+			border-radius: 4px;
+			margin: 0 11px 0 0;
+		}
+		.profile-member__name{
+			color: @white;
+			transition: color .2s;
+		}
+	}

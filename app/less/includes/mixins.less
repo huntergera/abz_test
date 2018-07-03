@@ -1,0 +1,20 @@
+/* **************** MIXINS ****************** */
+	.hover(){
+		&:hover{
+			transition: color .2s;
+			color: @hover_color;
+		}
+	}
+	.btn{
+		background: @green;
+		color: @white;
+		border-radius: 6px;
+		transition: background .2s;
+		&:hover{
+			background: lighten(@green, 7%)
+		}
+	}
+	.border-bottom{
+		border-bottom: 1px solid @border_color;
+		padding: 17px 0;
+	}

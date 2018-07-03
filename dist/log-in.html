@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	
+
+	
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/file-upload-with-preview/dist/file-upload-with-preview.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+
+	
+</head>
+
+<body>
+
+<!-- HEADER -->
+	<header class="header__log-in">
+		<div class="top-line">
+			<a href="#" class="brand-logo">
+				<img src="img/header/logo.png" alt="Denteez">
+			</a>
+			<button class="btn__log-in">Log in Now</button>
+		</div>
+		<div class="wrap">
+			<div class="header-text">
+				<h1 class="h1">Home of Dentistry</h1>
+				<p class="tagline">Denteez was created by dentists for dentistry in order to make the life of everyone involved in dentistry easier.</p>
+			</div>
+		</div>
+	</header>
+<!-- END HEADER -->
+
+<!-- FORM-LOG-IN -->
+	<div class="form__wrap">
+		<div class="wrap">
+			<form class="form__log-in" id="form__log-in">
+				<div class="form__content">
+					<p class="required-description">Fields marked “*” are required</p>
+					<div class="form__row row__select">
+						<label class="form__label" for="enquiry-type__select">Enquiry Type *</label>
+						<select name="" id="enquiry-type__select">
+							 <option value="other">Other</option>
+							 <option value="other1">Other1</option>
+						</select>
+					</div>
+					<div class="form__row">
+						<input class="input" type="text" placeholder="Other">
+					</div>
+					<div class="form__row row__name">
+						<label class="form__label" for="name">Name*</label>
+						<input class="input" type="text" id="name" name="name" placeholder="Dentist">
+					</div>
+					<div class="form__row row__email">
+						<label class="form__label" for="email">E-mail *</label>
+						<input class="input" type="email" id="email" name="email" placeholder="rachelm@gmail.com">
+					</div>
+					<div class="form__row">
+						<label class="form__label" for="subject">Subject *</label>
+						<input class="input" type="text" id="subject">
+					</div>
+					<div class="form__row">
+						<div class="labels">
+							<label class="form__label" for="textarea">Description *</label>
+							<label class="form__label" for="textarea">(<span id="symbol-numbers">0</span>/1000)</label>
+						</div>
+						<textarea name="description" id="textarea" cols="30" rows="10" maxlength="1000"></textarea>
+					</div>
+
+					<div class="form__row">
+						<div class="custom-file-container" data-upload-id="myUniqueUploadId">
+				            <label><a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">
+				            	<div class="btn_close btn_close_form"></div>
+				            </a></label>
+				 
+				            <label class="custom-file-container__custom-file" >
+				                <input type="file" class="custom-file-container__custom-file__custom-file-input" accept=".jpg, .jpeg, .png">
+				                <input type="hidden" name="MAX_FILE_SIZE" value="5242880" id="max-file-size" />
+				                <span class="custom-file-container__custom-file__custom-file-control">
+				                </span>
+				                <span class="add-photo">
+				                	Add photo <br>
+				                	<span class="add-photo__description">Minimum size of 300x300 jpeg ipg png 5 MB</span><br>
+				                	<span class="add-photo__error">The photo does not meet the requirements</span>
+				                </span>
+				            </label>
+				            <div class="custom-file-container__image-preview"></div>
+				        </div>
+					</div>
+				</div>
+				<button type="submit" class="btn_sbm">Submit</button>
+			</form>
+		</div>
+	</div>
+<!-- END FORM-LOG-IN -->
+
+<!-- ABOUT -->
+	<section class="about">
+		<div class="about__wrap">
+			<h2 class="h2">About Denteez</h2>
+			<div class="about__text">
+				<p class="text__item">
+					Why is it always so difficult to find what you are looking for in dentistry? Whether it is the latest advancement in technology or techniques or simply a review or understanding of the vast amount of products? Perhaps finding someone to just fix your broken equipment or simply hiring new staff or looking for that new job?
+				</p>
+				<p class="text__item">
+					Our mission is to give every dental professional the possibility to discuss and share all aspects of their profession, their practice and their business. We aim to make the world of dentistry easy and accessible, so every dental professional can find what they are looking for quickly and easily all in one place.
+				</p>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="about__wrap">
+<!-- FOOTER -->
+			<footer class="left-sidebar__footer">
+				<span class="copy">Denteez Copyright 2015</span>
+				<div class="footer__links">
+					<a href="#" class="terms">Support</a>
+					<a href="#" class="privacy">Privacy Policy</a>
+					<a href="#" class="terms">Terms of use</a>
+				</div>
+			</footer>
+<!-- END FOOTER -->
+		</div>
+	</section>
+<!-- END ABOUT -->
+
+
+
+
+<!-- SCRIPTS -->
+	<script src="https://unpkg.com/file-upload-with-preview"></script>
+	<script src="js/vendor.js"></script>
+
+	<script src="js/custom.js"></script>
+<!-- END SCRIPTS -->
+
+</body>
+
+</html>

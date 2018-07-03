@@ -1,0 +1,227 @@
+/* **************** LOG-IN ****************** */
+	h1,
+	.h1{
+		font-size: 48px;
+		font-weight: 300;
+		margin-bottom: 12px;
+	}
+	.wrap{
+		max-width: 760px;
+		margin: 0 auto;
+	}
+	.header__log-in{
+		background: url('../img/log-in/bg-header.jpg') no-repeat center/cover;
+		padding: 40px 0 208px 0;
+		.top-line{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 39px 0 50px;
+			margin-bottom: 106px;
+		}
+		.header-text{
+			color: @white;
+			text-align: center;
+		}
+		.tagline{
+			font-size: 20px;
+			font-weight: 300;
+			padding: 0 15%;
+			line-height: 1.4;
+		}
+	}
+	.btn__log-in{
+		.btn;
+		font-size: 13px;
+    	padding: 8px 23px;
+	}
+	.form__log-in{
+		input,
+		textarea,
+		select{
+			border: 1px solid #c8cdd5;
+		}
+	}
+	.form__wrap{
+		background: url('../img/log-in/bg-2.jpg')no-repeat center/cover;
+		margin-bottom: 94px;
+	}
+	.form__log-in{
+		position: relative;
+		top: -100px;
+		.form__content{
+			background: @white;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			border-radius: 4px;
+			box-sizing: border-box;
+			padding: 19px 19px 0 19px;
+			margin-bottom: 20px;
+		}
+		.required-description{
+			color: #c1c1c1;
+			margin-bottom: 14px;
+		}
+		.form__row{
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 17px;
+			width: 100%;
+			position: relative;
+		}
+		.row__select{
+			margin-bottom: 20px;
+		}
+		.row__name,
+		.row__email{
+			width: 48%;
+		}
+		.form__label{
+			color: @tagline_color;
+			margin-bottom: 8px;
+		}
+		#enquiry-type__select{
+			font-size: 15px;
+			padding: 0 0 0 16px;
+			color: @tagline_color;
+			height: 52px;
+			border-radius: 6px;
+		}
+		.input{
+			color: #7c8695;
+			font-size: 16px;
+			height: 52px;
+			border-radius: 6px;
+			padding: 0 0 0 16px;
+		}
+		.input.error{
+			border-color: #fb6363;
+			transition: border-color .2s;
+		}
+		.labels{
+			display: flex;
+			justify-content: space-between;
+		}
+		label.error{
+			color: #fb6363;
+			position: absolute;
+			font-size: 12px;
+			font-family: "Myriad Pro";
+			bottom: -16px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.input__file{
+			width: 131px;
+			height: 131px;
+			padding: 0;
+		}
+		.btn_sbm{
+			.btn;
+			width: 100%;
+			font-size: 15px;
+			height: 52px;
+		}
+		#textarea{
+			height: 151px;
+			width: 100%;
+		}
+	}
+	.custom-file-container__image-preview {
+		background-size: 100% 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 130px;
+		height: 130px;
+		margin: 0;
+	}
+	.custom-file-container__image-preview__active{
+		z-index: 1;
+	}
+	.custom-file-container__custom-file__custom-file-control{
+		width: 130px;
+		height: 130px;
+		background: #f7f7f7;
+		text-align: center;
+		&:after{
+			content: "Add photo";
+			color: #7c8695;
+			top: 27px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+		}
+		&:before{
+			content: "Minimum size of 300x300 jpeg ipg png 5 MB";
+			color: #c2c2c4;
+			top: 45px;
+			font-size: 12px;
+			background: transparent;
+			border: none;
+			line-height: 1.2;
+		}
+	}
+	.add-photo{
+		background: #f7f7f7;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		color: #7c8695;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		padding: 9px 11px 0 11px;
+		display: none;
+	}
+	.add-photo__description{
+		color: #c2c2c4;
+		font-size: 12px;
+	}
+	.add-photo__error{
+		font-size: 12px;
+		color: #fb6363;
+	}
+	.custom-file-container__custom-file__custom-file-control:empty::after{
+		content: "Add photo";
+		color: #7c8695;
+	}
+	.custom-file-container__image-clear{
+		position: absolute;
+		top: -19px;
+		right: -8px;
+		z-index: 1;
+	}
+	.custom-file-container__custom-file{
+		height: 130px;
+		width: 130px;
+		margin-top: 0;
+	}
+	.custom-file-container{
+		margin-top: 3px;
+		width: 130px;
+		z-index: 1;
+	}
+	.btn_close_form{
+		width: 24px;
+		height: 24px;
+		background: #65bade;
+		border-radius: 50%;
+		&:before,&:after{
+			height: 12px;
+			left: 11px;
+			top: 6px;
+		}
+		cursor: pointer;
+		&:hover{
+			background: #d95252;
+		}
+	}
+	.custom-file-container__custom-file__custom-file-input{
+		min-width: 130px;
+		height: 130px;
+		width: 130px;
+	}
